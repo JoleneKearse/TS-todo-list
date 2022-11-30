@@ -1,0 +1,23 @@
+{
+  "name": "ts-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoleneKearse/TS-todo-list.git"
+  },
+  "keywords": [],
+  "author": "Jolene Kearse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoleneKearse/TS-todo-list/issues"
+  },
+  "homepage": "https://github.com/JoleneKearse/TS-todo-list#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
