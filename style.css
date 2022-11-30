@@ -6,6 +6,26 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#list,
+#new-task-form {
+  margin-top: 2em;
+}
+
 #list {
   list-style: none;
+}
+
+#new-task-form {
+  display: flex;
+  gap: 1em;
+}
+
+input,
+button {
+  padding: .25em .5em;
 }
