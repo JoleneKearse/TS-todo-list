@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "tsc  --watch",
     "build": "snowpack build"
   },
   "dependencies": {

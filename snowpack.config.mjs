@@ -1,33 +1,19 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+
 export default {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' },
+    // Same behavior as the "src" example above:
+    src: { url: "/dist" },
+    // Mount "public" to the root URL path ("/*") and serve files with zero transformations:
+    public: { url: "/", static: true, resolve: false },
   },
+
   plugins: [
     [
-      '@snowpack/plugin-typescript',
+      "@snowpack/plugin-typescript",
       {
-        /* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
-        ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
+        tsc: "tsc",
       },
     ],
   ],
-  routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
-  ],
-  optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
-  },
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
 };
